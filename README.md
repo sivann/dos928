@@ -10,7 +10,7 @@ This set includes a keyboard driver (TSR, x86 assembly) and vga fonts.
 Circa 2000.
 
 
-#About
+# About
 
 This set of programs is an addition to the Angelos Karageorgiou's vgagreek 
 DOS greek keyboard driver. The additions/modifications enable DOS programs to
@@ -31,12 +31,12 @@ characters are in the place of the DOS "graphics" (lines,corners, et.c) so
 instead of those you will see greek letters. This is not a problem if you
 use an editor such as vim which doesn't display those characters.
 
-#Purpose
+# Purpose
 I had an old 486 laptop with 2MB of memory. I wanted to use my old favourite
 DOS programms, but writing greek involved converting each time the files to
 the 928 charset with a filter. So I made the appropriate changes.
 
-#Description/Instructions
+# Description/Instructions
 This package contains 2 programs:
 
 keygr928.com : this is a keyboard driver which enables you to write greek in 
@@ -88,7 +88,7 @@ loadcpi.bat: example on how to load the above .cpi
 
 
 
-#Installation
+# Installation
 1. remove all appearences of the following drivers from config.sys:
    display.sys
    country.sys
