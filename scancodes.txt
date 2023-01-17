@@ -1,0 +1,76 @@
+		       IBM PC KEYBOARD SCAN CODES IN HEX RETURNED IN 
+                 registers al and ah by: mov ah,0 - int 16h
+
+             AND AN OPEN BOOK TEST AT THE BOTTOM OF THESE PAGES
+                 FROM DOS THAT YOU MAY DOWNLOAD IF YOU WISH
+                   OR TAKE THE JAVASCRIPT TEST RIGHT HERE
+
+  ------------------------------------------------------------------------
+
+                    ALL NUMBERS BELOW ARE IN HEXADECIMAL
+
+Key   NoShift Shift  Ctrl   Alt          Key    NoShift Shift  Ctrl   Alt
+      ah-al   ah-al  ah-al  ah-al               ah-al   ah-al  ah-al  ah-al
+
+A     1E/61   1E/41  1E/01  1E/00        F1     3B/00   54/00  5E/00  68/00
+B     30/62   30/42  30/02  30/00        F2     3C/00   55/00  5F/00  69/00
+C     2E/63   2E/43  2E/03  2E/00        F3     3D/00   56/00  60/00  6A/00
+D     20/64   20/44  20/04  20/00        F4     3E/00   57/00  61/00  6B/00
+E     12/65   12/45  12/05  12/00        F5     3F/00   58/00  62/00  6C/00
+F     21/66   21/46  21/06  21/00        F6     40/00   59/00  63/00  6D/00
+G     22/67   22/47  22/07  22/00        F7     41/00   5A/00  64/00  6E/00
+H     23/68   23/48  23/08  23/00        F8     42/00   5B/00  65/00  6F/00
+I     17/69   17/49  17/09  17/00        F9     43/00   5C/00  66/00  70/00
+J     24/6A   24/4A  24/0A  24/00        F10    44/00   5D/00  67/00  71/00
+K     25/6B   25/4B  25/0B  25/00        F11    85/00   87/00  89/00  8B/00
+L     26/6C   26/4C  26/0C  26/00        F12    86/00   88/00  8A/00  8C/00
+M     32/6D   32/4D  32/0D  32/00
+N     31/6E   31/4E  31/0E  31/00        NUMERIC KEYPAD
+O     18/6F   18/4F  18/0F  18/00
+P     19/70   19/50  19/10  19/00     Ins  0    52/00   52/30
+Q     10/71   10/51  10/11  10/00     End  1    4F/00   4F/31  75/00  00/01
+R     13/72   13/52  13/12  13/00 Dn Arrow 2    50/00   50/32         00/02
+S     1F/73   1F/53  1F/13  1F/00     PgDn 3    51/00   51/33  76/00  00/03
+T     14/74   14/54  14/14  14/00     <--  4    4B/00   4B/34  73/00  00/04
+U     16/75   16/55  16/15  16/00          5            4C/35         00/05
+V     2F/76   2F/56  2F/16  2F/00     -->  6    4D/00   4D/36  74/00  00/06
+W     11/77   11/57  11/17  11/00     Home 7    47/00   47/37  77/00  00/07
+X     2D/78   2D/58  2D/18  2D/00 Up Arrow 8    48/00   48/38         00/08
+Y     15/79   15/59  15/19  15/00     PgUp 9    49/00   49/39  84/00  00/09
+Z     2C/7A   2C/5A  2C/1A  2C/00      -        4A/2D   4A/2D
+Space 39/20   39/20  39/20  39/20      +        4E/2B   4E/2B
+Esc   01/1B   01/1B  01/1B             *        37/2A   37/2A
+1 !   02/31   02/21         78/00      /        35/2F   35/2F
+2 @   03/32   03/40  03/00  79/00     Del       53/00   53/2E
+3 #   04/33   04/23         7A/00     Enter     1C/02   1C/02  1C/0A
+4 $   05/34   05/24         7B/00
+5 %   06/35   06/25         7C/00     TOGGLE and SHIFT KEYS:
+6 ^   07/36   07/5E  07/1E  7D/A0     Read or Write MEM Location 0000:0417
+7 &   08/37   08/26         7E/00     bit  key          when bit = 1
+8 *   09/38   09/2A         7F/00      7   Insert       insert mode on
+9 (   0A/39   0A/38         80/00      6   CapsLock     capslock mode on
+0 )   OB/30   0B/29         81/00      5   NumLock      numlock mode on
+- _   0C/2D   0C/5F  0C/1F  82/00      4   ScrollLock   scroll lock mode on
+= +   0D/3D   0D/2B         83/00      3   Alt Shift    key down
+[ {   1A/5B   1A/7B  1A/1B             2   Ctrl Shift   key down
+] }   1B/5D   1B/7D  1B/1D             1   Left Shift   key down
+BakSp 0E/08   0E/08                    0   Right Shift  key down
+; :   27/3B   27/3A
+' "   28/27   28/22                    Read or Write MEM Location 0000:0418
+` ~   29/60   29/7E                    bit  key         when bit = 1
+, <   33/2C   33/3C                    7   Insert       key down
+. >   34/2E   34/3E                    6   CapsLock     key down
+/ ?   35/2F   35/3F                    5   NumLock      key down
+Enter 1C/0D   1C/0D  1C/0A             4   ScrollLock   key down
+Tab   0F/09   0F/00
+\ |   2B/5C   2B/7C  2B/1C             (above from IBM Technical Manual)
+
+   TEXT MODE VIDEO LINE ADDRESSSES:    WINDOWS NT only (courtesy Bret Johnson)
+    ------------------------------     ---------------  ah-al
+    0-0000  6-0960 12-1920 18-2880     Left window      E0/5B
+    1-0160  7-1120 13-2080 19-3040     Right window     E0/5C
+    3-0480  9-1440 15-2400 21-3360     Right mouse      E0/5D
+    4-0640 10-1600 16-2560 22-3520
+    5-0800 11-1760 17-2720 23-3680
+   24-3840 In decimal
+
