@@ -114,7 +114,3 @@ Of course you must first copy the programs to your disk.
                         
 
 Spiros Ioannou
-sivann@cs.ntua.gr
-http://www.softlab.ntua.gr/~sivann
-
-you may find the original vgagreek.zip at www.unix.gr
