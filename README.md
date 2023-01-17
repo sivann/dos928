@@ -33,8 +33,8 @@ use an editor such as vim which doesn't display those characters.
 
 # Purpose
 I had an old 486 laptop with 2MB of memory. I wanted to use my old favourite
-DOS programms, but writing greek involved converting each time the files to
-the 928 charset with a filter. So I made the appropriate changes.
+DOS programs, but writing greek involved converting each time the text files to
+the 928 charset with a filter. So I made this.
 
 # Description/Instructions
 This package contains 2 programs:
